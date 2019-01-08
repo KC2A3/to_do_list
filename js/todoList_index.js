@@ -93,3 +93,10 @@ function clear() {
   localStorage.clear();
   load();
 }
+window.addEventListener("load", load);
+document.getElementById("clearbutton").onclick = clear;
+document.getElementById("add_list").onkeypress = function(event) {
+  if (event.keyCode === 13) {
+    addTodolist();
+  }
+};
