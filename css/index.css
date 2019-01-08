@@ -17,3 +17,59 @@ header {
   height: 24px;
   font-size: 18px;
 }
+.content {
+  width: 40%;
+  margin: 0px auto;
+}
+li {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  height: 32px;
+  box-shadow: 0 1px 0 black;
+  line-height: 32px;
+  list-style: none;
+}
+ol li input {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+p {
+  margin: 0px;
+}
+ol li p {
+  display: inline;
+  margin-left: 35px;
+}
+ol li p input {
+  top: 5px;
+  margin-left: 35px;
+  width: 70%;
+  height: 14px;
+  font-size: 14px;
+  line-height: 14px;
+}
+ol li a {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  display: inline-block;
+  border: 1px;
+  width: 16px;
+  height: 16px;
+  font-size: 32px;
+  line-height: 10px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+ol li a:hover {
+  color: black;
+}
+#donelist li p {
+  text-decoration: line-through;
+  color: gray;
+}
