@@ -79,3 +79,12 @@ function remove(i) {
 function saveData(data) {
   localStorage.setItem("mytodolist", JSON.stringify(data));
 }
+
+function loadData() {
+  var history = localStorage.getItem("mytodolist");
+  if (history != null) {
+    return JSON.parse(history);
+  } else {
+    return [];
+  }
+}
