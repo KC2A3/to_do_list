@@ -69,3 +69,9 @@ function update(i, field, value) {
   saveData(todolist);
   load();
 }
+
+function remove(i) {
+  todolist.splice(i, 1);
+  saveData(todolist);
+  load();
+}
