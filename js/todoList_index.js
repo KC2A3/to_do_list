@@ -63,3 +63,9 @@ function changeType(number) {
   inputId.onblur = confirm;
   inputId.onkeypress = enter;
 }
+
+function update(i, field, value) {
+  todolist[i][field] = value;
+  saveData(todolist);
+  load();
+}
