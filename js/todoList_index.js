@@ -75,3 +75,7 @@ function remove(i) {
   saveData(todolist);
   load();
 }
+
+function saveData(data) {
+  localStorage.setItem("mytodolist", JSON.stringify(data));
+}
