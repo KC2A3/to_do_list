@@ -88,3 +88,8 @@ function loadData() {
     return [];
   }
 }
+
+function clear() {
+  localStorage.clear();
+  load();
+}
