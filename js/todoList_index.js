@@ -36,3 +36,17 @@ function load() {
     done.innerHTML = "";
   }
 }
+
+function changeType(number) {
+  var p = document.getElementById('part-' + number),
+    pContent = p.innerHTML,
+    inputId;
+
+  function confirm() {
+    if (inputId.value.length === 0) {
+      p.innerHTML = pContent;
+      alert("内容不能为空");
+    } else {
+      update(i, "todo", inputId.value);
+    }
+  }
