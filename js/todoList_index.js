@@ -50,3 +50,16 @@ function changeType(number) {
       update(i, "todo", inputId.value);
     }
   }
+
+  function enter(event) {
+    if (event.keyCode == 13) {
+      confirm();
+    }
+  }
+  p.innerHTML = "<input type='text' id='input-" + i + "' value='" + pContent + "'>";
+  inputId = document.getElementById('input-' + i);
+  inputId.focus();
+  inputId.setSelectionRange(0, inputId.value.length);
+  inputId.onblur = confirm;
+  inputId.onkeypress = enter;
+}
